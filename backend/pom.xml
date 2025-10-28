@@ -54,9 +54,12 @@
 			<version>0.11.5</version>
 		</dependency>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 311b00c8ca8addd27e4cca3eb421f491431c0d3d
+=======
+>>>>>>> 9654ebcb45553a0e9fe6acacd8cad3dc52e747f9
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
