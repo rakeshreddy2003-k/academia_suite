@@ -9,15 +9,14 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Admin {
-	
+public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id; 
 	@Column(unique = true)
 	private String userName;
-	private String name, gender, role, password, degree;
-	private int age, experiences;
+	private String name, gender, password, school10th, puc12th, schoolPercentage, pucPercentage, 
+	certificate10, certificatePuc, selectCourse;
+	private int age;
 	private long phone;
-	
 }
