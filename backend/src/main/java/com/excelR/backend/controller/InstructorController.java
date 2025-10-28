@@ -10,18 +10,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.excelR.backend.dao.AdminDao;
-import com.excelR.backend.model.Admin;
+import com.excelR.backend.dao.InstructorDao;
+import com.excelR.backend.model.Instructor;
 
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 @RestController
-@RequestMapping("/auth/admin")
-public class AdminController {
+@RequestMapping("/auth/instructor")
+public class InstructorController {
 	@Autowired
-	AdminDao dao;
+	InstructorDao dao;
 	
 	@PostMapping("/register")
-	public ResponseEntity<Admin> registerUser(@RequestBody Admin admin) {
-		return new ResponseEntity<Admin>(dao.saveUser(admin),HttpStatus.CREATED);
+	public ResponseEntity<Instructor> registerUser(@RequestBody Instructor instructor) {
+		return new ResponseEntity<Instructor>(dao.saveUser(instructor),HttpStatus.CREATED);
 	}
 }

@@ -9,15 +9,13 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Admin {
-	
+public class Instructor {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id; 
 	@Column(unique = true)
 	private String userName;
-	private String name, gender, role, password, degree;
+	private String name, gender, Department, password, degree, Subject;
 	private int age, experiences;
 	private long phone;
-	
 }
